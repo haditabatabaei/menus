@@ -1,20 +1,74 @@
 {
-    "simpleMenu": [
-      {
-        "name": "Link1",
-        "href": "#Link1Anchor"
-      },
-      {
-        "name": "Google",
-        "href": "https://www.google.com"
-      },
-      {
-        "name": "Link3",
-        "href": "#"
-      },
-      {
-        "name": "Link4",
-        "href": "#Link4"
-      }
+  "simpleMenu": [
+    {
+      "name": "Link1",
+      "href": "#Link1Anchor"
+    },
+    {
+      "name": "Google",
+      "href": "https://www.google.com"
+    },
+    {
+      "name": "Link3",
+      "href": "#"
+    },
+    {
+      "name": "Link4",
+      "href": "#Link4"
+    }
+  ],
+  "nestedMenu": [
+    {
+      "name": "Link1",
+      "href": "#Link1Anchor",
+      "subset": [
+        {
+          "name": "Sub-Link1",
+          "href": "#SubLink1Anchor"
+        },
+        {
+          "name": "Sub2-Link1",
+          "href": "#Sub2Link1Anchor",
+          "subset": [
+            {
+              "name": "Sub-Sub2-Link1",
+              "href": "#SubSub2Link1Anchor",
+              "subset": [
+                {
+                "name": "Sub-Sub-Sub2-Link1",
+                "href": "#SubSub2Sub2Link1Anchor"
+                }  
+              ]
+            },
+            {
+              "name": "Sub2-Sub2-Link1",
+              "href": "#Sub2Sub2Link1Anchor"
+            }
+          ]
+        },
+        {
+          "name": "Sub3-Link1",
+          "href": "#Sub3Link1Anchor"
+        }
+      ]
+    },
+    {
+      "name": "Google",
+      "href": "https://www.google.com",
+      "subset": [
+        {
+          "name": "Search Asghar",
+          "href": "https://www.google.com?q=asgahr"
+        }
+      ]
+    },
+    {
+      "name": "Link3",
+      "href": "#"
+    },
+    {
+      "name": "Link4",
+      "href": "#Link4"
+    }
   ]
 }
